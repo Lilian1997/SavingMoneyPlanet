@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小資星球｜高利活存帳戶</title>
+    <link rel="icon" href="./img/logo/logo-03.png">
+
+    <link rel="stylesheet" href="./_css/bootstrap.css">
+
+    <link rel="stylesheet" href="./project.css">
+
+    <link rel="stylesheet" href="./project.js">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        @media screen and (min-width :1200px) {
+            #login_sm {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width :1200px) {
+            #login_xl {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width :1200px) {
+            #login_xl {
+                display: none;
+            }
+        }
+
+
+        @media screen and (min-width: 800px) {
+            .News {
+                width: 700px;
+            }
+        }
+
+        @media screen and (min-width :1000px) {
+            .classic .f_Salesnews_text {
+                -webkit-line-clamp: 5;
+                text-align: justify;
+            }
+        }
+
+        @media screen and (min-width :1200px) {
+
+#SWIPER_M,
+#SWIPER_S,
+#SWIPER_bank_M,
+#SWIPER_bank_S {
+    display: none;
+}
+}
+
+@media screen and (max-width :900px) {
+
+#SWIPER_M,
+#SWIPER_L,
+#SWIPER_bank_M,
+#SWIPER_bank_L {
+    display: none;
+}
+}
+
+@media screen and ((max-width :1200px) and (min-width :900px)) {
+
+#SWIPER_S,
+#SWIPER_L,
+#SWIPER_bank_S,
+#SWIPER_bank_L {
+    display: none;
+}
+}
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="bigcontainer"> <!--外層container-->
+
+        <!--navbar-->
+
+        <nav class="navbar navbar-expand-xl NavBar fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="./landingpage.html">
+                    <img src="./img/logo/logo-01.png" height="55">
+                </a>
+
+
+
+
+
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="login_sm" class="me-3">
+                    <a class="btn btn-outline-secondary" style="white-space: nowrap;" href="./login.html">登入/註冊</a>
+                </div>
+
+                <div class="collapse navbar-collapse ms-3 me-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" aria-current="page" href="./creditcard.html">信用卡</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="./bank.html">高利活存</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="./landingpage.html#STOCK">人氣股票排行</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="./landingpage.html#CODE">優惠碼</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="./landingpage.html#NEWS">優惠快報</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="./discuss.html">討論版</a>
+                        </li>
+
+
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 ms-2" type="search" placeholder="搜尋" aria-label="Search">
+                        <button class="btn btn-outline-secondary me-2" type="submit"><i
+                                class="bi bi-search"></i></button>
+                    </form>
+
+
+                </div>
+
+                <div id="login_xl" class="me-3">
+                    <a class="btn btn-outline-secondary" style="white-space: nowrap;" href="./login.html">登入/註冊</a>
+                </div>
+
+
+
+            </div>
+        </nav>
+
+
+        <a href="#">
+
+            <div class="fixed" style="z-index:3; position: fixed; bottom: 5px; right: 5px;">
+
+                <i class="bi bi-arrow-up-circle text-secondary" style="font-size: 25px;"></i>
+
+            </div>
+        </a>
+
+        <div class="contentcontainer px-4"> <!--內容-->
+
+
+            <div class="News d-flex"> <!--最新消息-->
+                <div style="display: inline-flex;" class="ms-1 me-2 "><i class="bi bi-megaphone-fill"></i></div>
+
+                <div style="display: inline-flex;">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <span class="f_news ">綠色金融成為全球關注焦點，投資綠色產業的新機會</span>
+
+                            </div>
+                            <div class="carousel-item">
+
+                                <a href="./article.html"> <span class="f_news ">讓小資族更聰明投資！機器人投資助你實現財務目標</span>
+                                </a>
+
+                            </div>
+                            <div class="carousel-item">
+                                <span class="f_news">打造小資族夢幻理財計劃：信用卡提升你的財務自由度</span>
+                            </div>
+                            <div class="carousel-item">
+                                <span class="f_news">金融科技革命風起雲湧，如何運用智能科技提升理財效益</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="pt-4"> <!--高利活存是什麼-->
+                <div class="d-flex"> <!--高利活存標題列-->
+                    <div class="f_title_page"> <!--高利活存大標題-->
+                        <span>高利活存帳戶是什麼？</span>
+                    </div>
+                </div>
+
+
+
+                <div
+                    style="background-color: #FFFFFF; margin: 30px; padding: 20px; border: #425F84 solid 1px; border-radius: 10px; box-shadow: 2px 2px 2px #425F84;">
+                    <div>嘿！想為你介紹一個超實用的理財工具 - 高利活儲帳戶！高利活儲帳戶可以隨時存取資金，而不用擔心資金被長期投資鎖住。這樣一來，即便遇到緊急情況或突發需求，我們也能輕鬆應對，同時保持資金的增值。
+                        <br><br>
+
+                        為何它是一項實用的理財工具呢？來看個數據舉例吧！假設你將10,000元存入高利活儲帳戶，年利率為3%，一年後，你的資金就會成長為10,300元！相較於一般儲蓄帳戶的回報，高利活儲帳戶絕對更能幫助我們靈活運用，實現財務目標。
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+            <hr>
+
+
+
+            <div><!--存款順序推薦-->
+
+                <div class="d-flex"> <!--存款順序推薦標題列-->
+                    <div class="f_title_page"> <!--存款順序推薦大標題-->
+                        <span>存款順序推薦</span>
+                    </div>
+                </div>
+
+                <div class=" d-flex justify-content-center">
+
+                    <div class="depositorder">
+                        <div style="font-weight: 600;">很多人都有高利活存帳戶，但是要怎麼存最划算？一個月又能收到多少利息呢？我們推薦你以下順序，從利息最高者開始存滿！</div>
+                    </div>
+                </div>
+
+                <div class="container-fluid"><!--存款順序圈圈-->
+
+
+                    <div class="d-flex justify-content-center align-items-center">
+
+                        <div class="flex-grow-1">
+                            <div class="bank_turn_container">
+
+                                <div class="bank_turn" style="background-image: url(./img/bank/0_S_Bankee.png);"></div>
+                            </div>
+                            <div class="bank_turn_name">遠銀<br>Bankee</div>
+                            <div class="bank_turn_profit">108元</div>
+
+                        </div>
+
+                        <div class="flex-grow-1 d-flex justify-content-center align-items-center"><i class="bi bi-arrow-right" style="text-align: center;"></i></div>
+
+                        <div class="flex-grow-1">
+                            <div class="bank_turn_container">
+
+                                <div class="bank_turn" style="background-image: url(./img/bank/0_S_richart.png);"></div>
+                            </div>
+                            <div class="bank_turn_name">台新<br>Richart</div>
+                            <div class="bank_turn_profit">266元</div>
+
+                        </div>
+
+                        <div class="flex-grow-1 d-flex justify-content-center align-items-center"><i class="bi bi-arrow-right"></i></div>
+
+                        <div class="flex-grow-1">
+                            <div class="bank_turn_container">
+
+                                <div class="bank_turn" style="background-image: url(./img/bank/0_S_newnewbank.png);">
+                                </div>
+                            </div>
+                            <div class="bank_turn_name">聯邦<br>New New Bank</div>
+                            <div class="bank_turn_profit">166元</div>
+
+                        </div>
+
+                        <div class="flex-grow-1 d-flex justify-content-center align-items-center"><i class="bi bi-arrow-right"></i></div>
+
+                        <div class="flex-grow-1">
+                            <div class="bank_turn_container">
+                                <div class="bank_turn" style="background-image: url(./img/bank/0_S_DAWHO.png);"></div>
+
+                            </div>
+
+                            <div class="bank_turn_name">永豐<br>DAWHO</div>
+                            <div class="bank_turn_profit">375元</div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div style="text-align:center; padding: 30px 5px 0px 5px; font-size: 22px; font-weight: 600;
+                     color: #425F84;">一個月多存 1000 !!!</div>
+
+                </div>
+
+                <hr>
+
+                <div class="d-flex"> <!--存款順序推薦標題列-->
+                    <div class="f_title_page"> <!--存款順序推薦大標題-->
+                        <span>高利活存帳戶整理</span>
+                    </div>
+                </div>
+
+                <div class="mt-"><!--帳戶表格整理-->
+
+                    <div class="table-container">
+                        <table>
+
+                            <tr>
+                                <td rowspan="2" class="tablenone" id="tablenone1">數位帳戶</td>
+                                <td><img src="./img/bank/0_R_Bankee.png" class="img-fluid"></td>
+                                <td><img src="./img/bank/0_R_DAWHO.png" class="img-fluid"></img></td>
+                                <td><img src="./img/bank/0_R_iLeo.png" class="img-fluid"></td>
+                                <td><img src="./img/bank/0_R_newnewbank.png" class="img-fluid"></td>
+                                <td><img src="./img/bank/0_R_NextBank.png" class="img-fluid"></td>
+                                <td><img src="./img/bank/0_R_richart.png" class="img-fluid"></td>
+                                <td><img src="./img/bank/0_R_SnY.png" class="img-fluid"></td>
+                            </tr>
+                            <tr>
+
+                                <td id="bankee">遠東商銀 Bankee</td>
+                                <td>永豐銀行 大戶DAWHO</td>
+                                <td>第一銀行 iLeo</td>
+                                <td>聯邦銀行 New New Bank</td>
+                                <td>將來銀行 NEXT BANK</td>
+                                <td>台新銀行 richart</td>
+                                <td>華南銀行 SNY</td>
+
+                            </tr>
+                            <tr>
+                                <td>最高活儲利率</td>
+                                <td>2.6%</td>
+                                <td>1.5%</td>
+                                <td>2%</td>
+                                <td>8%</td>
+                                <td>5%</td>
+                                <td>3.2%</td>
+                                <td>2.3%</td>
+
+                            </tr>
+                            <tr>
+                                <td>每月免費跨堤</td>
+                                <td>6次</td>
+                                <td>20次</td>
+                                <td>5次</td>
+                                <td>10次</td>
+                                <td>20次</td>
+                                <td>5次</td>
+                                <td>5次</td>
+
+                            </tr>
+                            <tr>
+                                <td>每月免費跨堤</td>
+                                <td>6次</td>
+                                <td>20次</td>
+                                <td>10次</td>
+                                <td>10次</td>
+                                <td>20次</td>
+                                <td>5次</td>
+                                <td>5次</td>
+
+                            </tr>
+                            <tr>
+                                <td>台幣活儲額度</td>
+                                <td>最高500萬</td>
+                                <td>30萬</td>
+                                <td>12萬</td>
+                                <td>10萬</td>
+                                <td>5萬</td>
+                                <td>最高30萬</td>
+                                <td>20萬</td>
+
+                            </tr>
+                            <tr>
+                                <td>推薦碼</td>
+                                <td>SE2783</td>
+                                <td>AH3399</td>
+                                <td>SD2893</td>
+                                <td>JJ7864</td>
+                                <td>VV4672</td>
+                                <td>4jFF02</td>
+                                <td>L39ujf</td>
+                            </tr>
+                            <tr>
+                                <td>備註</td>
+                                <td>透過指定連結，加入社群圈享優惠</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td>新戶限定，舊戶符合條件享1.3%</td>
+                                <td></td>
+
+                            </tr>
+                        </table>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+            <hr>
+
+            <div><!--經典文章/新手搶先看-->
+
+                <div class="d-flex"> <!--經典文章標題列-->
+                    <div class="f_title_page"> <!--經典文章大標題-->
+                        <span>經典好文必看</span>
+                    </div>
+                </div>
+
+
+                <div class="classic"> <!--經典好文-->
+
+
+                    <!-- 插入圖片與文章連結 -->
+                    <div class="SalesnewsImg container-lg">
+
+                        <a href="./article4.html">
+                            <div class="row d-flex">
+
+                                <div class="col-12 col-lg-4">
+                                    <img class="img-fluid rounded" src="./img/disscuss/computer.jpg">
+
+                                </div>
+
+
+                                <div class="d-block col-12 col-lg-8">
+
+                                    <div class="">
+
+                                        <p class="f_ins" style="color: #425F84;">這些高利活存帳戶存滿，每年多領超過一萬！</p>
+                                    </div>
+
+                                    <div class="Salesnews_text">
+                                        <div>
+                                            <p class="f_Salesnews_text">
+                                                高利活存是一種理財工具，可以讓你在儲蓄的同時獲得相對較高的利息回報。以下是五間推薦的高利活存帳戶，它們提供了各種吸引人的優勢，讓你的儲蓄更具價值。
+
+金融機構A高利活存：金融機構A提供了一個具有競爭力的年利率，讓你的儲蓄得到穩定的增長。此外，他們還提供方便的線上帳戶管理工具，讓你輕鬆監控和管理你的資金。
+
+金融機構B高利活存：金融機構B的高利活存帳戶具有無最低餘額要求的特點，讓你有更大的彈性來管理你的儲蓄。他們還提供24/7客戶支援，以解答你的問題並提供協助。
+
+金融機構C高利活存：金融機構C的高利活存帳戶提供了一個容易開設和操作的選項，讓你可以快速啟動儲蓄計劃。他們還提供獨特的儲蓄目標設定工具，幫助你管理和達成個人的儲蓄目標。
+
+金融機構D高利活存：金融機構D的高利活存帳戶提供了彈性的利息支付選項，你可以選擇按月或按季支付利息，以符合你的個人需求。此外，他們還提供了方便的自動轉帳功能，讓你可以自動將資金轉入儲蓄帳戶。
+
+金融機構E高利活存：金融機構E的高利活存帳戶提供了一個多元化的儲蓄方案，讓你可以根據個人需求和風險承受能力選擇不同的投資選項。他們還提供了專業的理財顧問服務，以幫助你做出明智的儲蓄和投資決策。
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <div class="me-2 ms-auto">
+                                            查看全文>>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </a>
+
+                    </div>
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <hr>
+
+            <div><!--最多人在聊-->
+
+
+
+                <div class=""> <!--討論區-->
+
+                    <div class="d-flex"> <!--討論區大標題-->
+
+                        <div class="f_title_page"> <!--最多人在聊標題-->
+                            <span>最多人在聊</span>
+                        </div>
+
+
+                        <!-- <div class="bg-warning"> 看更多介紹，放信用卡頁面連結，背景方框填色，設定hover，更改超連結設定去除底線  -->
+                        <a target="_blank" href="./discuss.html" class="d-flex ms-auto">
+                            <div class="f_more align-self-center">看更多閒聊<i class="bi bi-chevron-double-right"></i>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <!-- 討論版，裡面放討論文章連結 -->
+                    <div class="discussBoard_land container-md d-flex justify-content-center">
+
+                        <div class="row bank_discuss">
+                            <div class="col-12 col-lg-6">
+
+                                <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+                                    <a href="./discussion_content.html">
+
+                                        <div class="d-flex">
+
+                                            <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                                                <img class="rounded img-fluid" src="./img/disscuss/stock.jpg">
+                                            </div>
+
+
+                                            <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+                                                <div class="d-flex pt-2 pe-2"><!--卡片的右邊文字部分icon-->
+                                                    <div class="ms-auto "><i class="bi bi-heart "></i></div>
+                                                    <div class="ms-1"><i class="bi bi-bookmark"></i></div>
+                                                    <div class="ms-1"><i class="bi bi-send ms-auto"></i></div>
+                                                </div>
+
+
+                                                <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                                                    <p class="f_artTitle Art_text_Title">最近發現的省錢妙招！北漂人、小資族們必看</p>
+                                                </div>
+
+                                                <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                                                    <p class="f_artcont Art_text">
+                                                        最近真的愛上在熱門時間過後才去超商買食物，友善時光真的對北漂小資族來說是大大福音，隨便都有個七折左右，一個月下來省了好多，如果懶得自己煮，直接買現成的常常有點超過預算
+                                                    </p>
+                                                </div>
+
+                                                <div class="writer d-flex"><!--卡片的右邊下面作者部分-->
+                                                    <!--卡片的右邊文字部分作者頭像-->
+                                                    <div class="personalPic"
+                                                        style="background-image: url(./img/disscuss/cat.jpg);">
+                                                    </div>
+
+                                                    <div>
+                                                        <div class="writerName">喵喵</div>
+                                                        <div class="writerName">2023-06-22</div>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </a>
+
+
+
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-lg-6">
+                                <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+
+                                    <a href="./discussion_content.html">
+
+                                        <div class="d-flex">
+
+                                            <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                                                <img class="rounded img-fluid" src="./img/disscuss/cash.jpg">
+                                            </div>
+
+
+                                            <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+                                                <div class="d-flex pt-2 pe-2"><!--卡片的右邊文字部分icon-->
+                                                    <div class="ms-auto "><i class="bi bi-heart "></i></div>
+                                                    <div class="ms-1"><i class="bi bi-bookmark"></i></div>
+                                                    <div class="ms-1"><i class="bi bi-send ms-auto"></i></div>
+                                                </div>
+
+
+                                                <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                                                    <p class="f_artTitle Art_text_Title">最近發現的省錢妙招！北漂人、小資族們必看</p>
+                                                </div>
+
+                                                <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                                                    <p class="f_artcont Art_text">
+                                                        最近真的愛上在熱門時間過後才去超商買食物，友善時光真的對北漂小資族來說是大大福音，隨便都有個七折左右，一個月下來省了好多，如果懶得自己煮，直接買現成的常常有點超過預算
+                                                    </p>
+                                                </div>
+
+                                                <div class="writer d-flex"><!--卡片的右邊下面作者部分-->
+                                                    <!--卡片的右邊文字部分作者頭像-->
+                                                    <div class="personalPic"
+                                                        style="background-image: url(./img/disscuss/cat.jpg);">
+                                                    </div>
+
+                                                    <div>
+                                                        <div class="writerName">喵喵</div>
+                                                        <div class="writerName">2023-06-22</div>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </a>
+
+
+
+                                </div>
+
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+                                    <a href="./discussion_content.html">
+                                        <div class="d-flex">
+
+                                            <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                                                <img class="rounded img-fluid" src="./img/disscuss/computer.jpg">
+                                            </div>
+
+
+                                            <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+                                                <div class="d-flex pt-2 pe-2"><!--卡片的右邊文字部分icon-->
+                                                    <div class="ms-auto "><i class="bi bi-heart "></i></div>
+                                                    <div class="ms-1"><i class="bi bi-bookmark"></i></div>
+                                                    <div class="ms-1"><i class="bi bi-send ms-auto"></i></div>
+                                                </div>
+
+
+                                                <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                                                    <p class="f_artTitle Art_text_Title">最近發現的省錢妙招！北漂人、小資族們必看</p>
+                                                </div>
+
+                                                <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                                                    <p class="f_artcont Art_text">
+                                                        最近真的愛上在熱門時間過後才去超商買食物，友善時光真的對北漂小資族來說是大大福音，隨便都有個七折左右，一個月下來省了好多，如果懶得自己煮，直接買現成的常常有點超過預算
+                                                    </p>
+                                                </div>
+
+                                                <div class="writer d-flex"><!--卡片的右邊下面作者部分-->
+                                                    <!--卡片的右邊文字部分作者頭像-->
+                                                    <div class="personalPic"
+                                                        style="background-image: url(./img/disscuss/cat.jpg);">
+                                                    </div>
+
+                                                    <div>
+                                                        <div class="writerName">喵喵</div>
+                                                        <div class="writerName">2023-06-22</div>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+                                    <a href="./discussion_content.html">
+                                        <div class="d-flex">
+
+                                            <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                                                <img class="rounded img-fluid"
+                                                    src="./img/disscuss/pay by credit card.jpg">
+                                            </div>
+
+
+                                            <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+                                                <div class="d-flex pt-2 pe-2"><!--卡片的右邊文字部分icon-->
+                                                    <div class="ms-auto "><i class="bi bi-heart "></i></div>
+                                                    <div class="ms-1"><i class="bi bi-bookmark"></i></div>
+                                                    <div class="ms-1"><i class="bi bi-send ms-auto"></i></div>
+                                                </div>
+
+
+                                                <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                                                    <p class="f_artTitle Art_text_Title">最近發現的省錢妙招！北漂人、小資族們必看</p>
+                                                </div>
+
+                                                <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                                                    <p class="f_artcont Art_text">
+                                                        最近真的愛上在熱門時間過後才去超商買食物，友善時光真的對北漂小資族來說是大大福音，隨便都有個七折左右，一個月下來省了好多，如果懶得自己煮，直接買現成的常常有點超過預算
+                                                    </p>
+                                                </div>
+
+                                                <div class="writer d-flex"><!--卡片的右邊下面作者部分-->
+                                                    <!--卡片的右邊文字部分作者頭像-->
+                                                    <div class="personalPic"
+                                                        style="background-image: url(./img/disscuss/cat.jpg);">
+                                                    </div>
+
+                                                    <div>
+                                                        <div class="writerName">喵喵</div>
+                                                        <div class="writerName">2023-06-22</div>
+
+                                                    </div>
+
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+
+                                    </a>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+        </div>
+
+        <div class="Footer"> <!--footer-->
+
+            <div class="d-flex px-4 align-self-center m-auto" style="width: 500px;">
+                <!-- 放LOGO -->
+                <div class="flex-grow-1 align-self-center"><a href="" class=""><img src="./img/logo/logo-01.png"
+                            style="width: 120px;"></a></div>
+                <!-- 中間資訊 -->
+                <div class="flex-grow-1">
+                    <div class="d-flex"> <!--關於我們-->
+                        <div class="f_footer flex-grow-1 pt-1">關於我們</div>
+                        <div class="f_footer flex-grow-1 pt-1">商業合作</div>
+                        <div class="f_footer flex-grow-1 pt-1">徵才資訊</div>
+
+                    </div>
+                    <div class="f_footer m-auto pt-3"> <!---->
+                        © 2023 小資星球 All rights reserved.
+                    </div>
+                </div>
+
+                <!-- 社群icon -->
+                <div class="d-flex flex-grow-1 align-self-center ">
+
+                    <div class="flex-grow-1"><a href=""><i class="bi bi-instagram"></i></a></div>
+                    <div class="flex-grow-1"><a href=""><i class="bi bi-facebook"></i></a></div>
+                    <div class="flex-grow-1"><a href=""><i class="bi bi-youtube"></i></a></div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./_js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>

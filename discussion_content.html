@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>小資星球</title>
+    <link rel="icon" href="./img/logo/logo-03.png">
+
+    <link rel="stylesheet" href="./_css/bootstrap.css">
+
+    <link rel="stylesheet" href="./project.css">
+
+    <link rel="stylesheet" href="./project.js">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        @media screen and (min-width :1200px) {
+            #login_sm {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width :1200px) {
+            #login_xl {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width :1200px) {
+            #login_xl {
+                display: none;
+            }
+        }
+
+
+        @media screen and (min-width: 800px) {
+            .News {
+                width: 700px;
+            }
+        }
+
+
+
+        /* 以下為優惠碼顯示 */
+
+        @media screen and (max-width: 992px) and (min-width:600px) {
+            #smCode {
+                display: none;
+            }
+
+        }
+
+
+        @media screen and (min-width: 992px) {
+            #mdCode {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            #mdCode {
+                display: none;
+            }
+        }
+
+        /* 以上為優惠碼 */
+
+        @media screen and (min-width :1000px) {
+            .classic .f_Salesnews_text {
+                -webkit-line-clamp: 5;
+                text-align: justify;
+            }
+        }
+    </style>
+
+
+</head>
+
+
+<body>
+
+    <div class="bigcontainer"> <!--外層container-->
+
+        <!--navbar-->
+
+        <nav class="navbar navbar-expand-xl NavBar fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="./landingpage.html">
+                    <img src="./img/logo/logo-01.png" height="55">
+                </a>
+
+
+
+
+
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="login_sm" class="me-3">
+                    <a class="btn btn-outline-secondary" style="white-space: nowrap;" href="./login.html">登入/註冊</a>
+                </div>
+
+                <div class="collapse navbar-collapse ms-3 me-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" aria-current="page" href="./creditcard.html">信用卡</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="./bank.html">高利活存</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="./landingpage.html#STOCK">人氣股票排行</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="./landingpage.html#CODE">優惠碼</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="./landingpage.html#NEWS">優惠快報</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="./discuss.html">討論版</a>
+                        </li>
+
+
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 ms-2" type="search" placeholder="搜尋" aria-label="Search">
+                        <button class="btn btn-outline-secondary me-2" type="submit"><i
+                                class="bi bi-search"></i></button>
+                    </form>
+
+
+                </div>
+
+                <div id="login_xl" class="me-3">
+                    <a class="btn btn-outline-secondary" style="white-space: nowrap;" href="./login.html">登入/註冊</a>
+                </div>
+
+
+
+            </div>
+        </nav>
+
+  
+        <a href="#">
+
+            <div class="fixed" style="z-index:3; position: fixed; bottom: 5px; right: 5px;">
+                    
+                    <i class="bi bi-arrow-up-circle text-secondary" style="font-size: 25px;"></i>
+                    
+            </div>
+        </a>
+
+        <div class="contentcontainer px-4"> <!--內容-->
+
+
+            <div class="News d-flex"> <!--最新消息-->
+                <div style="display: inline-flex;" class="ms-1 me-2 "><i class="bi bi-megaphone-fill"></i></div>
+
+                <div style="display: inline-flex;">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <span class="f_news ">綠色金融成為全球關注焦點，投資綠色產業的新機會</span>
+
+                            </div>
+                            <div class="carousel-item">
+                                
+                                <a href="./article.html"><span class="f_news ">讓小資族更聰明投資！機器人投資助你實現財務目標</span></a>
+
+                        </div>
+                            <div class="carousel-item">
+                                <span class="f_news">打造小資族夢幻理財計劃：信用卡提升你的財務自由度</span>
+                            </div>
+                            <div class="carousel-item">
+                                <span class="f_news">金融科技革命風起雲湧，如何運用智能科技提升理財效益</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="container-fluid article_box">
+
+                <div class="article_h1">
+                    <h1>最近發現的省錢妙招！北漂人、小資族們必看</h1>
+                </div><!-- 標題 -->
+
+                <div class="article_info"><!-- 資訊 -->
+
+                    <div>發布日期 2023/04/05</div>
+                    <div>分類 美食</div>
+                    <div>作者 Chat GPT</div>
+
+
+                </div>
+
+
+
+                <div class="article_content"><!-- 文章內容 -->
+
+                    <!-- <h5>機器人投資：智慧的投資新選擇</h5> -->
+                    <p>
+                        最近真的愛上在熱門時間過後才去超商買食物，友善時光真的對北漂小資族來說是大大福音！
+                    </p>
+
+                    <img src="./img/disscuss/food.png" class="img-fluid">
+
+
+                    <p>嗨大家！我是貝，今天要跟大家分享超商的友善食光，讓生活更便利的幾個好處！
+                    </p>
+
+                    <p>首先，超商的友善食光給我們帶來了經濟實惠。超商提供各種價格合理的美食選擇，不論是早餐、午餐還是晚餐，你都能找到適合自己口味和預算的選項。相比於外出用餐或外賣，超商的價格通常更經濟實惠，能夠幫助我們節省開支。
+                    </p>
+
+                    <p>其次，超商的友善食光提供了多樣化的選擇。無論你是喜歡傳統的台灣小吃、日式便當還是西式三明治，超商都能滿足你的口味。此外，超商還提供了各種點心、甜點和飲料供你選擇。你可以根據自己的喜好和需求，隨時找到適合的食物，讓每餐都能品味不同。
+                    </p>
+
+                    <p>最後，超商的友善食光帶來了便利性。無論你是在上班途中、外出旅行或者突然有用餐需求，超商隨處可見，方便又迅速。你不需要花時間等待餐廳的服務或等外賣送達，只需要走進超商，立刻就能找到美味的食物。超商的友善食光讓我們在繁忙的生活中輕鬆解決用餐問題，省去了許多煩惱和時間。
+                    </p>
+
+                    <p>總而言之，超商的友善食光帶給我們經濟實惠、多樣化和便利性。不論是節省開支、滿足口腹之慾，還是在忙碌的生活中輕鬆解決用餐問題，超商都是一個不可或缺的選擇。現在就去超商享受友善食光的好處吧！
+                    </p>
+
+                </div>
+
+
+                <div> <!--留言框框-->
+
+                    <form action="" method="post" onsubmit="return false;">
+
+                        <div class="row">
+                            <div class="col-2 col-md-3 ">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <input class="MSG_box form-control" type="text" placeholder="暱稱......" id="MSG_name"
+                                        value="">
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-10 col-md-7">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <input class="MSG_box form-control" type="text" placeholder="留言......" id="MSG_box"
+                                        value="">
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="col-12 col-md-2 mt-2 mt-md-0">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <button type="button" class="btn btn-secondary MSG_btn"
+                                        onclick="addMSG()">送出</button>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+
+                <div><!-- 留言內容 -->
+
+                    <div id="MSG_content">
+
+
+                    </div>
+                </div>
+
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+        <div class="Footer"> <!--footer-->
+
+            <div class="d-flex px-4 align-self-center m-auto" style="width: 500px;">
+                <!-- 放LOGO -->
+                <div class="flex-grow-1 align-self-center"><a href="" class=""><img src="./img/logo/logo-01.png"
+                            style="width: 120px;"></a></div>
+                <!-- 中間資訊 -->
+                <div class="flex-grow-1">
+                    <div class="d-flex"> <!--關於我們-->
+                        <div class="f_footer flex-grow-1 pt-1">關於我們</div>
+                        <div class="f_footer flex-grow-1 pt-1">商業合作</div>
+                        <div class="f_footer flex-grow-1 pt-1">徵才資訊</div>
+
+                    </div>
+                    <div class="f_footer m-auto pt-3"> <!---->
+                        © 2023 小資星球 All rights reserved.
+                    </div>
+                </div>
+
+                <!-- 社群icon -->
+                <div class="d-flex flex-grow-1 align-self-center ">
+
+                    <div class="flex-grow-1"><a href=""><i class="bi bi-instagram"></i></a></div>
+                    <div class="flex-grow-1"><a href=""><i class="bi bi-facebook"></i></a></div>
+                    <div class="flex-grow-1"><a href=""><i class="bi bi-youtube"></i></a></div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script src="./_js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function addMSG() {
+            
+            
+
+            // 取得輸入的值，設定變數
+            var MSGelement = document.getElementById("MSG_box").value;
+            var MSGcon = document.createElement("div");
+            MSGcon.classList.add("f_MSG_content");
+            MSGcon.innerText = MSGelement
+
+            var MSGname = document.getElementById("MSG_name").value;
+            var MSGNAME = document.createElement("div");
+            MSGNAME.classList.add("f_MSGNAME");
+            MSGNAME.innerText = MSGname;
+
+            var MSG_date = new Date().toLocaleString();
+            var MSGDATE = document.createElement("div");
+            MSGDATE.classList.add("f_Date");
+            MSGDATE.innerText = MSG_date;
+
+            // 取得原先設定的div，建立新行
+            var content = document.getElementById("MSG_content");
+            var line = document.createElement("div");
+            line.classList.add("MSG_content");
+            content.insertAdjacentElement("beforeend", line);
+
+            line.insertAdjacentElement("beforeend", MSGDATE);
+            line.insertAdjacentElement("beforeend", MSGNAME);
+            line.insertAdjacentElement("beforeend", MSGcon);
+
+            // line.insertAdjacentText("beforeend", new Date().toLocaleString());
+            // line.insertAdjacentText("beforeend", MSGname);
+            // line.insertAdjacentText("beforeend", MSGelement);
+
+
+            // line.innerHTML = new Date().toLocaleString();
+            // line.innerText = MSGname;
+            // line.innerText = MSGelement;
+
+            MSGname = "";
+            MSGelement = "";
+        
+            alert("已成功留言！");
+        }
+
+    </script>
+
+
+</body>
+
+</html>

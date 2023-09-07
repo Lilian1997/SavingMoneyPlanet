@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小資星球｜文章</title>
+  <link rel="icon" href="./img/logo/logo-03.png">
+
+  <link rel="stylesheet" href="./_css/bootstrap.css">
+
+  <link rel="stylesheet" href="./project.css">
+
+  <link rel="stylesheet" href="./project.js">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+    @media screen and (min-width :1200px) {
+      #login_sm {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width :1200px) {
+      #login_xl {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width :1200px) {
+      #login_xl {
+        display: none;
+      }
+    }
+
+
+    @media screen and (min-width: 800px) {
+      .News {
+        width: 700px;
+      }
+    }
+
+    @media screen and (min-width :1000px) {
+            .classic .f_Salesnews_text {
+                -webkit-line-clamp: 5;
+                text-align: justify;
+            }
+        }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="bigcontainer"> <!--外層container-->
+
+    <!--navbar-->
+
+    <nav class="navbar navbar-expand-xl NavBar fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="./landingpage.html">
+          <img src="./img/logo/logo-01.png" height="55">
+        </a>
+
+
+
+
+
+        <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="login_sm" class="me-3">
+          <a class="btn btn-outline-secondary" style="white-space: nowrap;" href="./login.html">登入/註冊</a>
+        </div>
+
+        <div class="collapse navbar-collapse ms-3 me-3" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="f_bar nav-link" aria-current="page" href="./creditcard.html">信用卡</a>
+            </li>
+            <li class="nav-item">
+              <a class="f_bar nav-link" href="./bank.html">高利活存</a>
+            </li>
+            <li class="nav-item">
+              <a class="f_bar nav-link" href="./landingpage.html#STOCK">人氣股票排行</a>
+            </li>
+            <li class="nav-item">
+              <a class="f_bar nav-link" href="./landingpage.html#CODE">優惠碼</a>
+            </li>
+            <li class="nav-item">
+              <a class="f_bar nav-link" href="./landingpage.html#NEWS">優惠快報</a>
+            </li>
+            <li class="nav-item">
+              <a class="f_bar nav-link" href="./discuss.html">討論版</a>
+            </li>
+
+
+
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 ms-2" type="search" placeholder="搜尋" aria-label="Search">
+            <button class="btn btn-outline-secondary me-2" type="submit"><i class="bi bi-search"></i></button>
+          </form>
+
+
+        </div>
+
+        <div id="login_xl" class="me-3">
+          <a class="btn btn-outline-secondary" style="white-space: nowrap;" href="./login.html">登入/註冊</a>
+        </div>
+
+
+
+      </div>
+    </nav>
+
+  
+    <a href="#">
+
+      <div class="fixed" style="z-index:3; position: fixed; bottom: 5px; right: 5px;">
+              
+              <i class="bi bi-arrow-up-circle text-secondary" style="font-size: 25px;"></i>
+              
+      </div>
+  </a>
+
+    <div class="contentcontainer px-4"> <!--內容-->
+
+
+      <div class="News d-flex"> <!--最新消息-->
+        <div style="display: inline-flex;" class="ms-1 me-2 "><i class="bi bi-megaphone-fill"></i></div>
+
+        <div style="display: inline-flex;">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <span class="f_news ">綠色金融成為全球關注焦點，投資綠色產業的新機會</span>
+
+              </div>
+              <div class="carousel-item">
+                                
+                <a href="./article.html"><span class="f_news ">讓小資族更聰明投資！機器人投資助你實現財務目標</span></a>
+
+        </div>
+              <div class="carousel-item">
+                <span class="f_news">打造小資族夢幻理財計劃：信用卡提升你的財務自由度</span>
+              </div>
+              <div class="carousel-item">
+                <span class="f_news">金融科技革命風起雲湧，如何運用智能科技提升理財效益</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="d-md-flex pt-4">
+
+        <div class="col-md-5">
+          <div class="d-flex"> <!--精選文章標題列-->
+            <div class="f_title_page"> <!--精選文章大標題-->
+              <span>精選文章</span>
+            </div>
+          </div>
+
+
+          <div class="discuss_articleZone"> <!--經典好文-->
+
+
+            <!-- 插入圖片與文章連結 -->
+
+            <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+              <a href="./article2.html">
+
+                <div class="d-flex">
+
+                  <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                    <img class="rounded img-fluid" src="./img/article/coffee.jpg">
+                  </div>
+
+
+                  <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+
+
+                    <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                      <p class="f_artTitle Art_text_Title">星巴克優惠 10 款必喝飲品「買1送1」!</p>
+                    </div>
+
+                    <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                      <div>
+                        <p class="f_Salesnews_text">
+                          星巴克優惠來了！今天限時一天，他們推出了10款必喝飲品「買1送1」的優惠活動！這個消息一出，立刻引起了廣大咖啡愛好者的熱烈討論和期待。不論是經典的拿鐵、香濃的焦糖瑪奇朵，還是清新的冰沙、水果茶，你都可以在這個限時優惠中品味到兩杯飲品的美味。
+
+                          想象一下，當你走進星巴克的店鋪，迎面而來的是咖啡的香氣和愉悅的氛圍。你可以隨心所欲地選擇自己喜歡的飲品，而且還能享受到額外的一杯免費！這種機會實在難得，讓人心動不已。
+
+                          或許你是個咖啡迷，對於星巴克的拿鐵情有獨鍾。這個優惠活動正是你展現品味的時候，你可以選擇濃郁的焦糖拿鐵、香醇的摩卡拿鐵，或者是搭配香草糖漿的香甜拿鐵。無論你選擇哪一款，你都可以免費獲得另一杯，與朋友或摯愛分享，一同品味咖啡的濃郁風味。
+
+                          如果你喜歡清爽的飲品，星巴克的冰沙系列絕對能滿足你的口感需求。你可以嘗試鮮榨水果的香甜滋味，如藍莓草莓冰沙或芒果百香果冰沙。在這個炎炎夏日，兩杯冰沙的涼爽口感絕對能為你帶來舒暢的享受。
+
+                          此外，星巴克還有其他多種選擇，如濃縮咖啡、特調茶飲、手沖咖啡等。不論你是喜歡咖啡的苦澀風味，還是茶飲的清新口感，星巴克的優惠活動都能讓你找到心儀的飲
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="me-2 ms-auto">
+                        查看全文>>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+              <a href="./article2.html">
+
+                <div class="d-flex">
+
+                  <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                    <img class="rounded img-fluid" src="./img/article/coffee.jpg">
+                  </div>
+
+
+                  <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+
+
+                    <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                      <p class="f_artTitle Art_text_Title">星巴克優惠 10 款必喝飲品「買1送1」!</p>
+                    </div>
+
+                    <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                      <div>
+                        <p class="f_Salesnews_text">
+                          星巴克優惠來了！今天限時一天，他們推出了10款必喝飲品「買1送1」的優惠活動！這個消息一出，立刻引起了廣大咖啡愛好者的熱烈討論和期待。不論是經典的拿鐵、香濃的焦糖瑪奇朵，還是清新的冰沙、水果茶，你都可以在這個限時優惠中品味到兩杯飲品的美味。
+
+                          想象一下，當你走進星巴克的店鋪，迎面而來的是咖啡的香氣和愉悅的氛圍。你可以隨心所欲地選擇自己喜歡的飲品，而且還能享受到額外的一杯免費！這種機會實在難得，讓人心動不已。
+
+                          或許你是個咖啡迷，對於星巴克的拿鐵情有獨鍾。這個優惠活動正是你展現品味的時候，你可以選擇濃郁的焦糖拿鐵、香醇的摩卡拿鐵，或者是搭配香草糖漿的香甜拿鐵。無論你選擇哪一款，你都可以免費獲得另一杯，與朋友或摯愛分享，一同品味咖啡的濃郁風味。
+
+                          如果你喜歡清爽的飲品，星巴克的冰沙系列絕對能滿足你的口感需求。你可以嘗試鮮榨水果的香甜滋味，如藍莓草莓冰沙或芒果百香果冰沙。在這個炎炎夏日，兩杯冰沙的涼爽口感絕對能為你帶來舒暢的享受。
+
+                          此外，星巴克還有其他多種選擇，如濃縮咖啡、特調茶飲、手沖咖啡等。不論你是喜歡咖啡的苦澀風味，還是茶飲的清新口感，星巴克的優惠活動都能讓你找到心儀的飲
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="me-2 ms-auto">
+                        查看全文>>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+              <a href="./article2.html">
+
+                <div class="d-flex">
+
+                  <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                    <img class="rounded img-fluid" src="./img/article/coffee.jpg">
+                  </div>
+
+
+                  <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+
+
+                    <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                      <p class="f_artTitle Art_text_Title">星巴克優惠 10 款必喝飲品「買1送1」!</p>
+                    </div>
+
+                    <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                      <div>
+                        <p class="f_Salesnews_text">
+                          星巴克優惠來了！今天限時一天，他們推出了10款必喝飲品「買1送1」的優惠活動！這個消息一出，立刻引起了廣大咖啡愛好者的熱烈討論和期待。不論是經典的拿鐵、香濃的焦糖瑪奇朵，還是清新的冰沙、水果茶，你都可以在這個限時優惠中品味到兩杯飲品的美味。
+
+                          想象一下，當你走進星巴克的店鋪，迎面而來的是咖啡的香氣和愉悅的氛圍。你可以隨心所欲地選擇自己喜歡的飲品，而且還能享受到額外的一杯免費！這種機會實在難得，讓人心動不已。
+
+                          或許你是個咖啡迷，對於星巴克的拿鐵情有獨鍾。這個優惠活動正是你展現品味的時候，你可以選擇濃郁的焦糖拿鐵、香醇的摩卡拿鐵，或者是搭配香草糖漿的香甜拿鐵。無論你選擇哪一款，你都可以免費獲得另一杯，與朋友或摯愛分享，一同品味咖啡的濃郁風味。
+
+                          如果你喜歡清爽的飲品，星巴克的冰沙系列絕對能滿足你的口感需求。你可以嘗試鮮榨水果的香甜滋味，如藍莓草莓冰沙或芒果百香果冰沙。在這個炎炎夏日，兩杯冰沙的涼爽口感絕對能為你帶來舒暢的享受。
+
+                          此外，星巴克還有其他多種選擇，如濃縮咖啡、特調茶飲、手沖咖啡等。不論你是喜歡咖啡的苦澀風味，還是茶飲的清新口感，星巴克的優惠活動都能讓你找到心儀的飲
+                        </p>
+
+                      </div>
+                    </div>
+
+                    <div class="d-flex">
+                      <div class="me-2 ms-auto">
+                        查看全文>>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+
+
+
+
+          </div>
+
+
+        </div>
+
+        <div class="col-md-7">
+
+          <div class=""> <!--討論區-->
+
+            <div class="d-flex"> <!--討論區大標題-->
+
+              <div class="f_title_page"> <!--最多人在聊標題-->
+                <span>討論版</span>
+              </div>
+
+            </div>
+
+            <!-- 討論版，裡面放討論文章連結 -->
+            <div class="discussBoard_land container-md d-flex justify-content-center">
+
+              <div class="row bank_discuss">
+                <div class="col-12">
+
+                  <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+                    <a href="./discussion_content.html">
+
+                      <div class="d-flex">
+
+                        <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                          <img class="rounded img-fluid" src="./img/disscuss/stock.jpg">
+                        </div>
+
+
+                        <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+                          <div class="d-flex pt-2 pe-2"><!--卡片的右邊文字部分icon-->
+                            <div class="ms-auto "><i class="bi bi-heart "></i></div>
+                            <div class="ms-1"><i class="bi bi-bookmark"></i></div>
+                            <div class="ms-1"><i class="bi bi-send ms-auto"></i></div>
+                          </div>
+
+
+                          <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                            <p class="f_artTitle Art_text_Title">最近發現的省錢妙招！北漂人、小資族們必看</p>
+                          </div>
+
+                          <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                            <p class="f_artcont Art_text">
+                              最近真的愛上在熱門時間過後才去超商買食物，友善時光真的對北漂小資族來說是大大福音，隨便都有個七折左右，一個月下來省了好多，如果懶得自己煮，直接買現成的常常有點超過預算
+                            </p>
+                          </div>
+
+                          <div class="writer d-flex"><!--卡片的右邊下面作者部分-->
+                            <!--卡片的右邊文字部分作者頭像-->
+                            <div class="personalPic" style="background-image: url(./img/disscuss/cat.jpg);">
+                            </div>
+
+                            <div>
+                              <div class="writerName">喵喵</div>
+                              <div class="writerName">2023-06-22</div>
+
+                            </div>
+
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </a>
+
+
+
+                  </div>
+                </div>
+
+                <div class="col-12">
+                  <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+
+                    <a href="./discussion_content.html">
+
+                      <div class="d-flex">
+
+                        <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                          <img class="rounded img-fluid" src="./img/disscuss/cash.jpg">
+                        </div>
+
+
+                        <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+                          <div class="d-flex pt-2 pe-2"><!--卡片的右邊文字部分icon-->
+                            <div class="ms-auto "><i class="bi bi-heart "></i></div>
+                            <div class="ms-1"><i class="bi bi-bookmark"></i></div>
+                            <div class="ms-1"><i class="bi bi-send ms-auto"></i></div>
+                          </div>
+
+
+                          <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                            <p class="f_artTitle Art_text_Title">最近發現的省錢妙招！北漂人、小資族們必看</p>
+                          </div>
+
+                          <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                            <p class="f_artcont Art_text">
+                              最近真的愛上在熱門時間過後才去超商買食物，友善時光真的對北漂小資族來說是大大福音，隨便都有個七折左右，一個月下來省了好多，如果懶得自己煮，直接買現成的常常有點超過預算
+                            </p>
+                          </div>
+
+                          <div class="writer d-flex"><!--卡片的右邊下面作者部分-->
+                            <!--卡片的右邊文字部分作者頭像-->
+                            <div class="personalPic" style="background-image: url(./img/disscuss/cat.jpg);">
+                            </div>
+
+                            <div>
+                              <div class="writerName">喵喵</div>
+                              <div class="writerName">2023-06-22</div>
+
+                            </div>
+
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </a>
+
+
+
+                  </div>
+
+                </div>
+                <div class="col-12">
+                  <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+                    <a href="./discussion_content.html">
+                      <div class="d-flex">
+
+                        <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                          <img class="rounded img-fluid" src="./img/disscuss/computer.jpg">
+                        </div>
+
+
+                        <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+                          <div class="d-flex pt-2 pe-2"><!--卡片的右邊文字部分icon-->
+                            <div class="ms-auto "><i class="bi bi-heart "></i></div>
+                            <div class="ms-1"><i class="bi bi-bookmark"></i></div>
+                            <div class="ms-1"><i class="bi bi-send ms-auto"></i></div>
+                          </div>
+
+
+                          <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                            <p class="f_artTitle Art_text_Title">最近發現的省錢妙招！北漂人、小資族們必看</p>
+                          </div>
+
+                          <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                            <p class="f_artcont Art_text">
+                              最近真的愛上在熱門時間過後才去超商買食物，友善時光真的對北漂小資族來說是大大福音，隨便都有個七折左右，一個月下來省了好多，如果懶得自己煮，直接買現成的常常有點超過預算
+                            </p>
+                          </div>
+
+                          <div class="writer d-flex"><!--卡片的右邊下面作者部分-->
+                            <!--卡片的右邊文字部分作者頭像-->
+                            <div class="personalPic" style="background-image: url(./img/disscuss/cat.jpg);">
+                            </div>
+
+                            <div>
+                              <div class="writerName">喵喵</div>
+                              <div class="writerName">2023-06-22</div>
+
+                            </div>
+
+                          </div>
+
+
+                        </div>
+                      </div>
+                    </a>
+
+
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+                    <a href="./discussion_content.html">
+                      <div class="d-flex">
+
+                        <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                          <img class="rounded img-fluid" src="./img/disscuss/pay by credit card.jpg">
+                        </div>
+
+
+                        <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+                          <div class="d-flex pt-2 pe-2"><!--卡片的右邊文字部分icon-->
+                            <div class="ms-auto "><i class="bi bi-heart "></i></div>
+                            <div class="ms-1"><i class="bi bi-bookmark"></i></div>
+                            <div class="ms-1"><i class="bi bi-send ms-auto"></i></div>
+                          </div>
+
+
+                          <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                            <p class="f_artTitle Art_text_Title">最近發現的省錢妙招！北漂人、小資族們必看</p>
+                          </div>
+
+                          <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                            <p class="f_artcont Art_text">
+                              最近真的愛上在熱門時間過後才去超商買食物，友善時光真的對北漂小資族來說是大大福音，隨便都有個七折左右，一個月下來省了好多，如果懶得自己煮，直接買現成的常常有點超過預算
+                            </p>
+                          </div>
+
+                          <div class="writer d-flex"><!--卡片的右邊下面作者部分-->
+                            <!--卡片的右邊文字部分作者頭像-->
+                            <div class="personalPic" style="background-image: url(./img/disscuss/cat.jpg);">
+                            </div>
+
+                            <div>
+                              <div class="writerName">喵喵</div>
+                              <div class="writerName">2023-06-22</div>
+
+                            </div>
+
+                          </div>
+
+
+                        </div>
+                      </div>
+
+                    </a>
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+
+    <script src="./_js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

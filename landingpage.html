@@ -1,0 +1,2117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>小資星球</title>
+    <link rel="icon" href="./img/logo/logo-03.png">
+
+    <link rel="stylesheet" href="./_css/bootstrap.css">
+
+    <link rel="stylesheet" href="./project.css">
+
+    <link rel="stylesheet" href="./project.js">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        @media screen and (min-width :1200px) {
+            #login_sm {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width :1200px) {
+            #login_xl {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width :1200px) {
+            #login_xl {
+                display: none;
+            }
+        }
+
+
+        @media screen and (min-width: 800px) {
+            .News {
+                width: 700px;
+            }
+        }
+
+
+
+        /* 以下為優惠碼顯示 */
+
+        @media screen and (max-width: 992px) and (min-width:600px) {
+            #smCode {
+                display: none;
+            }
+
+        }
+
+
+        @media screen and (min-width: 992px) {
+            #mdCode {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            #mdCode {
+                display: none;
+            }
+        }
+
+        /* 以上為優惠碼 */
+
+        @media screen and (min-width :1200px) {
+
+            #SWIPER_M,
+            #SWIPER_S,
+            #SWIPER_bank_M,
+            #SWIPER_bank_S {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width :900px) {
+
+            #SWIPER_M,
+            #SWIPER_L,
+            #SWIPER_bank_M,
+            #SWIPER_bank_L {
+                display: none;
+            }
+        }
+
+        @media screen and ((max-width :1200px) and (min-width :900px)) {
+
+            #SWIPER_S,
+            #SWIPER_L,
+            #SWIPER_bank_S,
+            #SWIPER_bank_L {
+                display: none;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="bigcontainer"> <!--外層container-->
+
+
+
+        <!--navbar-->
+
+        <nav class="navbar navbar-expand-xl NavBar fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="#">
+                    <img src="./img/logo/logo-01.png" height="55">
+                </a>
+
+
+
+
+
+                <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div id="login_sm" class="me-3">
+                    <a class="btn btn-outline-secondary" style="white-space: nowrap;" href="./login.html">登入/註冊</a>
+                </div>
+
+                <div class="collapse navbar-collapse ms-3 me-3" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" aria-current="page" href="./creditcard.html">信用卡</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="./bank.html">高利活存</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="#STOCK">人氣股票排行</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="#CODE">優惠碼</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="#NEWS">優惠快報</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="f_bar nav-link" href="./discuss.html">討論版</a>
+                        </li>
+
+
+
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 ms-2" type="search" placeholder="搜尋" aria-label="Search">
+                        <button class="btn btn-outline-secondary me-2" type="submit"><i
+                                class="bi bi-search"></i></button>
+                    </form>
+
+
+                </div>
+
+                <div id="login_xl" class="me-3">
+                    <a class="btn btn-outline-secondary" style="white-space: nowrap;" href="./login.html">登入/註冊</a>
+                </div>
+
+
+
+            </div>
+        </nav>
+
+
+        <a href="#">
+
+            <div class="fixed" style="z-index:3; position: fixed; bottom: 5px; right: 5px;">
+
+                <i class="bi bi-arrow-up-circle text-secondary" style="font-size: 25px;"></i>
+
+            </div>
+        </a>
+
+        <div class="contentcontainer px-4"> <!--內容-->
+
+
+            <div class="News d-flex"> <!--最新消息-->
+                <div style="display: inline-flex;" class="ms-1 me-2 "><i class="bi bi-megaphone-fill"></i></div>
+
+                <div style="display: inline-flex;">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <span class="f_news ">綠色金融成為全球關注焦點，投資綠色產業的新機會</span>
+
+                            </div>
+                            <div class="carousel-item">
+
+                                <a href="./article.html"><span class="f_news ">讓小資族更聰明投資！機器人投資助你實現財務目標</span></a>
+
+                            </div>
+                            <div class="carousel-item">
+                                <span class="f_news">打造小資族夢幻理財計劃：信用卡提升你的財務自由度</span>
+                            </div>
+                            <div class="carousel-item">
+                                <span class="f_news">金融科技革命風起雲湧，如何運用智能科技提升理財效益</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="CreditCardZone"> <!--信用卡-->
+                <div class="d-flex"> <!--信用卡標題列-->
+                    <div class="f_title"> <!--信用卡大標題-->
+                        <span>信用卡</span>
+                    </div>
+
+                    <!-- <div class="bg-warning"> 看更多介紹，放信用卡頁面連結，背景方框填色，設定hover，更改超連結設定去除底線  -->
+                    <a target="_blank" href="./creditcard.html" class="d-flex ms-auto">
+                        <div class="f_more align-self-center">看更多介紹<i class="bi bi-chevron-double-right"></i></div>
+                    </a>
+                    <!-- </div> -->
+                </div>
+
+                <div class="card_recommendation"> <!--信用卡片-->
+
+                    <swiper-container class="mySwiper" id="SWIPER_L" slides-per-view="4" centered-slides="false"
+                        space-between="10" pagination-clickable="true" grab-cursor="true" navigation="true">
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/cub-cube.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">國泰CUBE卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">指定通路消費 3% 起回饋無上限</p>
+                                            <p class="card-text">指定海外消費最高5%回饋</p>
+                                            <p class="card-text">台塑/中油加油最高6%回饋</p>
+                                            <a target="_blank"
+                                                href="https://www.cathaybk.com.tw/cathaybk/onlineservice/CreditCard/CreditCardApply/cardgrade-s2.aspx?CardMain=24"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.cathaybk.com.tw/cathaybk/personal/product/credit-card/cards/CUBE/?CUB_SRC=GOOGLE&CUB_CHL1=BAN&CUB_CHL2=01&MA_TK=DB564&CUB_DT=20221221&utm_source=Google_SEM_23Q2CUBE&utm_medium=product&utm_campaign=23Q2CUBE&utm_content=product&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJsZSHmGkNcVlJlWhRfcBxI_g7nwkf7CEU4YDENvxJF1ORQxe67AFUoaAsaLEALw_wcB"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/DAWHO.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">永豐DAWHO卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">國內1%、國外2% 回饋無上限</p>
+                                            <p class="card-text">七大指定通路消費再加碼5%</p>
+                                            <p class="card-text">完成指定任務一般消費加碼1%</p>
+                                            <a target="_blank"
+                                                href="https://mma.sinopac.com/SinoCard/Application/ApplyCard?prodtype=5&source=1"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWHO.html"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/GOGO.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">台新GOGO卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">網購、行動支付 最高3.8%</p>
+                                            <p class="card-text">指定品牌消費9折起</p>
+                                            <p class="card-text">完成指定任務再加碼</p>
+                                            <a target="_blank"
+                                                href="https://www.taishinbank.com.tw/eServiceA/CreditCardAP/apply/index.jsp?pc=192"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.taishinbank.com.tw/TSB/personal/credit/intro/overview/cg021/card001/"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/DBS.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">星展ECO永續卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">國內消費全面回饋2%</p>
+                                            <p class="card-text">海外最高3%回饋無上限</p>
+                                            <p class="card-text">共享汽機車最高享7%回饋</p>
+                                            <a target="_blank"
+                                                href="https://internet-banking.dbs.com.tw/credit-card-application/?cardlogo=310&sc=bb84759f1b27c075c91923e852c34b01"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.dbs.com.tw/personal-zh/cards/dbs_eco/index.html?sc=bb84759f1b27c075c91923e852c34b01&cid=tw:zh:cbg:card:sem:goo:ad:na:eco:gsi3104021:na:na&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJtXKDA5-MA542GwRaJOTeiuP2DrGJLg8q4ROfrnvjapU4DjXJHsPyoaAmAmEALw_wcB"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/HSBC.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">滙豐匯鑽卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">筆筆3%通路超過20家</p>
+                                            <p class="card-text">現金回饋翻倍最高6%</p>
+                                            <p class="card-text">威秀購票享平日7折</p>
+                                            <a target="_blank"
+                                                href="https://card.apply.hsbc.com.tw/hsbcoa/credit_card/select_your_card?cardid=13&BannerID=PWS_MK_TOP"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.hsbc.com.tw/credit-cards/products/cashback-titanium/"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/JIHO.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">聯邦吉鶴卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">國內消費 2% 回饋無上限</p>
+                                            <p class="card-text">日本 Apple Pay 消費 5%</p>
+                                            <p class="card-text">日幣 3.5% 回饋無上限</p>
+                                            <a target="_blank"
+                                                href="https://card.ubot.com.tw/eCard/dspCardOnLineApply.aspx?GID=59&IDE=A&strID=2008060014&PJN=&UTC=&USC="
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://activity.ubot.com.tw/2023JiHoCard/index.htm"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/LINEPAY.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">中信LINE Pay卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">最高享LINE POINTS 15%</p>
+                                            <p class="card-text">遊韓泰日新消費享5%回饋</p>
+                                            <p class="card-text">一般消費1%回饋無上限</p>
+                                            <a target="_blank"
+                                                href="https://ob.ctbcbank.com/card/#/apply?CrdTp=&Crd=C_LINEPay&CrdF=8715&CrdFace=&CrdB=&CrdG=&Unit=&Emp=&SPC=&Seed=ODcxNVcwMDY4&Fa=N&Chnl="
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/index.html?cttrace=1&ctid=25546_Linepay_Q1_2023&utm_campaign=25546_Linepay_Q1_2023&ctsource=google_keyword&utm_source=google_keyword&ctchannel=google_keyword&utm_medium=google_keyword&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJuDAE1HYHQ3p6a6OJSqOEKjdTe2uVllyYwtuSnQjrNutIdsEgcPQEMaAtpoEALw_wcB"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+
+
+                    </swiper-container>
+                    <swiper-container class="mySwiper" id="SWIPER_M" slides-per-view="3" centered-slides="false"
+                        space-between="10" pagination-clickable="true" grab-cursor="true" navigation="true">
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/cub-cube.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">國泰CUBE卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">指定通路消費 3% 起回饋無上限</p>
+                                            <p class="card-text">指定海外消費最高5%回饋</p>
+                                            <p class="card-text">台塑/中油加油最高6%回饋</p>
+                                            <a target="_blank"
+                                                href="https://www.cathaybk.com.tw/cathaybk/onlineservice/CreditCard/CreditCardApply/cardgrade-s2.aspx?CardMain=24"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.cathaybk.com.tw/cathaybk/personal/product/credit-card/cards/CUBE/?CUB_SRC=GOOGLE&CUB_CHL1=BAN&CUB_CHL2=01&MA_TK=DB564&CUB_DT=20221221&utm_source=Google_SEM_23Q2CUBE&utm_medium=product&utm_campaign=23Q2CUBE&utm_content=product&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJsZSHmGkNcVlJlWhRfcBxI_g7nwkf7CEU4YDENvxJF1ORQxe67AFUoaAsaLEALw_wcB"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/DAWHO.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">永豐DAWHO卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">國內1%、國外2% 回饋無上限</p>
+                                            <p class="card-text">七大指定通路消費再加碼5%</p>
+                                            <p class="card-text">完成指定任務一般消費加碼1%</p>
+                                            <a target="_blank"
+                                                href="https://mma.sinopac.com/SinoCard/Application/ApplyCard?prodtype=5&source=1"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWHO.html"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/GOGO.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">台新GOGO卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">網購、行動支付 最高3.8%</p>
+                                            <p class="card-text">指定品牌消費9折起</p>
+                                            <p class="card-text">完成指定任務再加碼</p>
+                                            <a target="_blank"
+                                                href="https://www.taishinbank.com.tw/eServiceA/CreditCardAP/apply/index.jsp?pc=192"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.taishinbank.com.tw/TSB/personal/credit/intro/overview/cg021/card001/"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/DBS.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">星展ECO永續卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">國內消費全面回饋2%</p>
+                                            <p class="card-text">海外最高3%回饋無上限</p>
+                                            <p class="card-text">共享汽機車最高享7%回饋</p>
+                                            <a target="_blank"
+                                                href="https://internet-banking.dbs.com.tw/credit-card-application/?cardlogo=310&sc=bb84759f1b27c075c91923e852c34b01"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.dbs.com.tw/personal-zh/cards/dbs_eco/index.html?sc=bb84759f1b27c075c91923e852c34b01&cid=tw:zh:cbg:card:sem:goo:ad:na:eco:gsi3104021:na:na&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJtXKDA5-MA542GwRaJOTeiuP2DrGJLg8q4ROfrnvjapU4DjXJHsPyoaAmAmEALw_wcB"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/HSBC.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">滙豐匯鑽卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">筆筆3%通路超過20家</p>
+                                            <p class="card-text">現金回饋翻倍最高6%</p>
+                                            <p class="card-text">威秀購票享平日7折</p>
+                                            <a target="_blank"
+                                                href="https://card.apply.hsbc.com.tw/hsbcoa/credit_card/select_your_card?cardid=13&BannerID=PWS_MK_TOP"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.hsbc.com.tw/credit-cards/products/cashback-titanium/"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/JIHO.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">聯邦吉鶴卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">國內消費 2% 回饋無上限</p>
+                                            <p class="card-text">日本 Apple Pay 消費 5%</p>
+                                            <p class="card-text">日幣 3.5% 回饋無上限</p>
+                                            <a target="_blank"
+                                                href="https://card.ubot.com.tw/eCard/dspCardOnLineApply.aspx?GID=59&IDE=A&strID=2008060014&PJN=&UTC=&USC="
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://activity.ubot.com.tw/2023JiHoCard/index.htm"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/LINEPAY.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">中信LINE Pay卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">最高享LINE POINTS 15%</p>
+                                            <p class="card-text">遊韓泰日新消費享5%回饋</p>
+                                            <p class="card-text">一般消費1%回饋無上限</p>
+                                            <a target="_blank"
+                                                href="https://ob.ctbcbank.com/card/#/apply?CrdTp=&Crd=C_LINEPay&CrdF=8715&CrdFace=&CrdB=&CrdG=&Unit=&Emp=&SPC=&Seed=ODcxNVcwMDY4&Fa=N&Chnl="
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/index.html?cttrace=1&ctid=25546_Linepay_Q1_2023&utm_campaign=25546_Linepay_Q1_2023&ctsource=google_keyword&utm_source=google_keyword&ctchannel=google_keyword&utm_medium=google_keyword&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJuDAE1HYHQ3p6a6OJSqOEKjdTe2uVllyYwtuSnQjrNutIdsEgcPQEMaAtpoEALw_wcB"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+
+
+                    </swiper-container>
+
+                    <swiper-container class="mySwiper" id="SWIPER_S" slides-per-view="1" centered-slides="false"
+                        space-between="10" pagination-clickable="true" grab-cursor="true" navigation="true">
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/cub-cube.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">國泰CUBE卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">指定通路消費 3% 起回饋無上限</p>
+                                            <p class="card-text">指定海外消費最高5%回饋</p>
+                                            <p class="card-text">台塑/中油加油最高6%回饋</p>
+                                            <a target="_blank"
+                                                href="https://www.cathaybk.com.tw/cathaybk/onlineservice/CreditCard/CreditCardApply/cardgrade-s2.aspx?CardMain=24"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.cathaybk.com.tw/cathaybk/personal/product/credit-card/cards/CUBE/?CUB_SRC=GOOGLE&CUB_CHL1=BAN&CUB_CHL2=01&MA_TK=DB564&CUB_DT=20221221&utm_source=Google_SEM_23Q2CUBE&utm_medium=product&utm_campaign=23Q2CUBE&utm_content=product&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJsZSHmGkNcVlJlWhRfcBxI_g7nwkf7CEU4YDENvxJF1ORQxe67AFUoaAsaLEALw_wcB"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/DAWHO.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">永豐DAWHO卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">國內1%、國外2% 回饋無上限</p>
+                                            <p class="card-text">七大指定通路消費再加碼5%</p>
+                                            <p class="card-text">完成指定任務一般消費加碼1%</p>
+                                            <a target="_blank"
+                                                href="https://mma.sinopac.com/SinoCard/Application/ApplyCard?prodtype=5&source=1"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://bank.sinopac.com/sinopacBT/personal/credit-card/introduction/bankcard/DAWHO.html"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/GOGO.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">台新GOGO卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">網購、行動支付 最高3.8%</p>
+                                            <p class="card-text">指定品牌消費9折起</p>
+                                            <p class="card-text">完成指定任務再加碼</p>
+                                            <a target="_blank"
+                                                href="https://www.taishinbank.com.tw/eServiceA/CreditCardAP/apply/index.jsp?pc=192"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.taishinbank.com.tw/TSB/personal/credit/intro/overview/cg021/card001/"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/DBS.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">星展ECO永續卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">國內消費全面回饋2%</p>
+                                            <p class="card-text">海外最高3%回饋無上限</p>
+                                            <p class="card-text">共享汽機車最高享7%回饋</p>
+                                            <a target="_blank"
+                                                href="https://internet-banking.dbs.com.tw/credit-card-application/?cardlogo=310&sc=bb84759f1b27c075c91923e852c34b01"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.dbs.com.tw/personal-zh/cards/dbs_eco/index.html?sc=bb84759f1b27c075c91923e852c34b01&cid=tw:zh:cbg:card:sem:goo:ad:na:eco:gsi3104021:na:na&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJtXKDA5-MA542GwRaJOTeiuP2DrGJLg8q4ROfrnvjapU4DjXJHsPyoaAmAmEALw_wcB"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/HSBC.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">滙豐匯鑽卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">筆筆3%通路超過20家</p>
+                                            <p class="card-text">現金回饋翻倍最高6%</p>
+                                            <p class="card-text">威秀購票享平日7折</p>
+                                            <a target="_blank"
+                                                href="https://card.apply.hsbc.com.tw/hsbcoa/credit_card/select_your_card?cardid=13&BannerID=PWS_MK_TOP"
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.hsbc.com.tw/credit-cards/products/cashback-titanium/"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/JIHO.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">聯邦吉鶴卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">國內消費 2% 回饋無上限</p>
+                                            <p class="card-text">日本 Apple Pay 消費 5%</p>
+                                            <p class="card-text">日幣 3.5% 回饋無上限</p>
+                                            <a target="_blank"
+                                                href="https://card.ubot.com.tw/eCard/dspCardOnLineApply.aspx?GID=59&IDE=A&strID=2008060014&PJN=&UTC=&USC="
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://activity.ubot.com.tw/2023JiHoCard/index.htm"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+                        <swiper-slide>
+                            <div class="d-flex justify-content-center align-items-center Card_section">
+                                <div>
+
+
+
+                                    <img src="./img/card/LINEPAY.png" class="card-img-top"
+                                        style="width: 18rem; border-radius: 16px; box-shadow: 2px 2px 2px #d9d9d9; margin-top: 15px; margin-bottom: 15px;">
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-header">中信LINE Pay卡</div>
+                                    </div>
+
+                                    <div class="card text-center" style="width: 18rem;">
+                                        <div class="card-body">
+
+                                            <p class="card-text">最高享LINE POINTS 15%</p>
+                                            <p class="card-text">遊韓泰日新消費享5%回饋</p>
+                                            <p class="card-text">一般消費1%回饋無上限</p>
+                                            <a target="_blank"
+                                                href="https://ob.ctbcbank.com/card/#/apply?CrdTp=&Crd=C_LINEPay&CrdF=8715&CrdFace=&CrdB=&CrdG=&Unit=&Emp=&SPC=&Seed=ODcxNVcwMDY4&Fa=N&Chnl="
+                                                class="btn btn-primary">申辦連結</a>
+                                            <a target="_blank"
+                                                href="https://www.ctbcbank.com/content/dam/minisite/long/creditcard/LINEPay/index.html?cttrace=1&ctid=25546_Linepay_Q1_2023&utm_campaign=25546_Linepay_Q1_2023&ctsource=google_keyword&utm_source=google_keyword&ctchannel=google_keyword&utm_medium=google_keyword&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJuDAE1HYHQ3p6a6OJSqOEKjdTe2uVllyYwtuSnQjrNutIdsEgcPQEMaAtpoEALw_wcB"
+                                                class="btn btn-primary">詳細資訊</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </swiper-slide>
+
+
+
+                    </swiper-container>
+
+
+
+
+
+                </div>
+
+                <div class="d-flex"> <!--底部文章連結-->
+                    <a target="_blank" href="./article3.html" class="d-inline-flex ms-auto">
+                        <div class="f_artcont"><i class="px-2 bi bi-pin-angle"></i>2023信用卡就辦這幾張！回饋爽爽拿！</div>
+                    </a>
+                </div>
+
+            </div>
+
+            <hr id="HR1">
+
+            <div class="BankZone"> <!--高利活存-->
+                <div class="d-flex"> <!--高利活存標題列-->
+                    <div class="f_title"> <!--高利活存大標題-->
+                        <span>高利活存帳戶</span>
+                    </div>
+
+                    <!-- <div class="bg-warning"> 看更多介紹，放高利活存頁面連結，背景方框填色，設定hover，更改超連結設定去除底線  -->
+                    <a target="_blank" href="./bank.html" class="d-flex ms-auto">
+                        <div class="f_more align-self-center">看更多介紹<i class="bi bi-chevron-double-right"></i></div>
+                    </a>
+                    <!-- </div> -->
+                </div>
+
+                <div class="Bank_landingpage_card"> <!--高利活存卡片-->
+
+                    <swiper-container class="mySwiper bank_swiper" id="SWIPER_bank_S" slides-per-view="1" centered-slides="false" space-between="10"
+                    pagination-clickable="true" grab-cursor="true" navigation="true">
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_Bankee.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">遠銀Bankee</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">活儲利率1.3%無上限</p>
+                                        <p class="card-text">加入社群圈享2.6%</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://www.appbankee.com.tw/v2web/aplfx/apply?prod=DEPOSIT&vm=VM3088&_ga=2.84384350.67901609.1687827113-1533213603.1687827113&_gac=1.60153311.1687827113.Cj0KCQjw7uSkBhDGARIsAMCZNJtYSgUghoKFBRFletlZ1zRYWhzg_RMox7HNxkE6Z-34AFP0dMb1aqEaApyeEALw_wcB" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://www.bankee.com.tw/Bankee.html" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_DAWHO.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">永豐DAWHO</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">30萬內活儲利率1.5%</p>
+                                        <p class="card-text">跨轉跨提20次免手續費</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?_sasdk=dMTg4ZmE1YWMzMjNlYTQtMGVlMmI2Nzc0MTg3MGYtMjYwMzFkNTEtMTI5NjAwMC0xODhmYTVhYzMyNGE1YQ&_ga=2.51530735.77813733.1687827433-1690997486.1687827433" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://dawho.tw/" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_iLeo.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">一銀iLEO</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">12萬內活儲利率2%</p>
+                                        <p class="card-text">跨轉跨提10次免手續費</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://ibank.firstbank.com.tw/NetBank/DigAMA/01.html?ch=newweb&cp=&em=" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://ibank.firstbank.com.tw/NetBank/DigAMA/LandingPage/index.html?ch=newweb&cp=&em=&slideIndex=0&openExternalBrowser=1" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_newnewbank.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">聯邦 New New Bank</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">10萬內活儲利率2%</p>
+                                        <p class="card-text">跨轉跨提10次免手續費</p>
+                                        <p class="card-text">新戶最高可享活儲利率8%</p>
+                                        <a target="_blank" href="https://newnewbank.ubot.com.tw/web/#/S0101001?_ga=2.114906319.933012131.1646787931-1352475909.1622710492&_gac=1.216254754.1646791674.EAIaIQobChMIroSdpfa39gIVWNeWCh2IGQFTEAAYASAAEgJi2PD_BwE" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://newnewbank.com.tw/" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_NextBank.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">將來銀行</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">新戶活儲利率最高5%</p>
+                                        <p class="card-text">20萬內活儲利率1.5%</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://www.nextbank.com.tw/app" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://www.nextbank.com.tw/" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_richart.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">台新Richart</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">新戶活儲利率最高3.2%</p>
+                                        <p class="card-text">舊戶完成指定任務1.6%</p>
+                                        <p class="card-text">跨轉跨提5次免手續費</p>
+                                        <a target="_blank" href="https://richart.tw/TSDIB_RichartWeb/Redirect/OpenAccountLink;WEB_SESSION=KHf6Zlro_TqgtbmUXtvdO929dRRctb72je2FIQvaKuscQLfk2dFZ!1952731585?utm_source=google&utm_medium=gsm&utm_campaign=richart_alwayson_20230401&utm_content=textlink_brand_richart&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJvDzf3WBXnOIS0MOnpVujfDR7PkUc6OWRSz7UYoErTqOZgdnmmtam4aAntsEALw_wcB" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://richart.tw/TSDIB_RichartWeb/Products/DemandDeposit?utm_source=google&utm_medium=gsm&utm_campaign=richart_alwayson_20230401&utm_content=textlink_brand_richart&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJvDzf3WBXnOIS0MOnpVujfDR7PkUc6OWRSz7UYoErTqOZgdnmmtam4aAntsEALw_wcB" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_SnY.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">華南SnY</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">10萬內活儲利率2.3%</p>
+                                        <p class="card-text">跨轉跨提50次免手續費</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://netbank.hncb.com.tw/netbank/servlet/TrxDispatcher?trx=com.lb.wibc.trx.eCounter_DigitAcct&state=notice" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://event.hncb.com.tw/sny/index.html" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+            
+            
+                </swiper-container>
+                <swiper-container class="mySwiper bank_swiper" id="SWIPER_bank_M" slides-per-view="3" centered-slides="false" space-between="10"
+                    pagination-clickable="true" grab-cursor="true" navigation="true">
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_Bankee.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">遠銀Bankee</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">活儲利率1.3%無上限</p>
+                                        <p class="card-text">加入社群圈享2.6%</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://www.appbankee.com.tw/v2web/aplfx/apply?prod=DEPOSIT&vm=VM3088&_ga=2.84384350.67901609.1687827113-1533213603.1687827113&_gac=1.60153311.1687827113.Cj0KCQjw7uSkBhDGARIsAMCZNJtYSgUghoKFBRFletlZ1zRYWhzg_RMox7HNxkE6Z-34AFP0dMb1aqEaApyeEALw_wcB" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://www.bankee.com.tw/Bankee.html" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_DAWHO.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">永豐DAWHO</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">30萬內活儲利率1.5%</p>
+                                        <p class="card-text">跨轉跨提20次免手續費</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?_sasdk=dMTg4ZmE1YWMzMjNlYTQtMGVlMmI2Nzc0MTg3MGYtMjYwMzFkNTEtMTI5NjAwMC0xODhmYTVhYzMyNGE1YQ&_ga=2.51530735.77813733.1687827433-1690997486.1687827433" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://dawho.tw/" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_iLeo.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">一銀iLEO</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">12萬內活儲利率2%</p>
+                                        <p class="card-text">跨轉跨提10次免手續費</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://ibank.firstbank.com.tw/NetBank/DigAMA/01.html?ch=newweb&cp=&em=" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://ibank.firstbank.com.tw/NetBank/DigAMA/LandingPage/index.html?ch=newweb&cp=&em=&slideIndex=0&openExternalBrowser=1" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_newnewbank.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">聯邦 New New Bank</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">10萬內活儲利率2%</p>
+                                        <p class="card-text">跨轉跨提10次免手續費</p>
+                                        <p class="card-text">新戶最高可享活儲利率8%</p>
+                                        <a target="_blank" href="https://newnewbank.ubot.com.tw/web/#/S0101001?_ga=2.114906319.933012131.1646787931-1352475909.1622710492&_gac=1.216254754.1646791674.EAIaIQobChMIroSdpfa39gIVWNeWCh2IGQFTEAAYASAAEgJi2PD_BwE" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://newnewbank.com.tw/" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_NextBank.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">將來銀行</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">新戶活儲利率最高5%</p>
+                                        <p class="card-text">20萬內活儲利率1.5%</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://www.nextbank.com.tw/app" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://www.nextbank.com.tw/" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_richart.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">台新Richart</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">新戶活儲利率最高3.2%</p>
+                                        <p class="card-text">舊戶完成指定任務1.6%</p>
+                                        <p class="card-text">跨轉跨提5次免手續費</p>
+                                        <a target="_blank" href="https://richart.tw/TSDIB_RichartWeb/Redirect/OpenAccountLink;WEB_SESSION=KHf6Zlro_TqgtbmUXtvdO929dRRctb72je2FIQvaKuscQLfk2dFZ!1952731585?utm_source=google&utm_medium=gsm&utm_campaign=richart_alwayson_20230401&utm_content=textlink_brand_richart&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJvDzf3WBXnOIS0MOnpVujfDR7PkUc6OWRSz7UYoErTqOZgdnmmtam4aAntsEALw_wcB" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://richart.tw/TSDIB_RichartWeb/Products/DemandDeposit?utm_source=google&utm_medium=gsm&utm_campaign=richart_alwayson_20230401&utm_content=textlink_brand_richart&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJvDzf3WBXnOIS0MOnpVujfDR7PkUc6OWRSz7UYoErTqOZgdnmmtam4aAntsEALw_wcB" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_SnY.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">華南SnY</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">10萬內活儲利率2.3%</p>
+                                        <p class="card-text">跨轉跨提50次免手續費</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://netbank.hncb.com.tw/netbank/servlet/TrxDispatcher?trx=com.lb.wibc.trx.eCounter_DigitAcct&state=notice" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://event.hncb.com.tw/sny/index.html" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+            
+            
+                </swiper-container>
+                <swiper-container class="mySwiper bank_swiper" id="SWIPER_bank_L" slides-per-view="4" centered-slides="false" space-between="10"
+                    pagination-clickable="true" grab-cursor="true" navigation="true">
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_Bankee.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">遠銀Bankee</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">活儲利率1.3%無上限</p>
+                                        <p class="card-text">加入社群圈享2.6%</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://www.appbankee.com.tw/v2web/aplfx/apply?prod=DEPOSIT&vm=VM3088&_ga=2.84384350.67901609.1687827113-1533213603.1687827113&_gac=1.60153311.1687827113.Cj0KCQjw7uSkBhDGARIsAMCZNJtYSgUghoKFBRFletlZ1zRYWhzg_RMox7HNxkE6Z-34AFP0dMb1aqEaApyeEALw_wcB" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://www.bankee.com.tw/Bankee.html" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_DAWHO.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">永豐DAWHO</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">30萬內活儲利率1.5%</p>
+                                        <p class="card-text">跨轉跨提20次免手續費</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://applydawho.sinopac.com/OpenAccount/OpenAccount/WhichOne?_sasdk=dMTg4ZmE1YWMzMjNlYTQtMGVlMmI2Nzc0MTg3MGYtMjYwMzFkNTEtMTI5NjAwMC0xODhmYTVhYzMyNGE1YQ&_ga=2.51530735.77813733.1687827433-1690997486.1687827433" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://dawho.tw/" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_iLeo.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">一銀iLEO</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">12萬內活儲利率2%</p>
+                                        <p class="card-text">跨轉跨提10次免手續費</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://ibank.firstbank.com.tw/NetBank/DigAMA/01.html?ch=newweb&cp=&em=" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://ibank.firstbank.com.tw/NetBank/DigAMA/LandingPage/index.html?ch=newweb&cp=&em=&slideIndex=0&openExternalBrowser=1" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_newnewbank.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">聯邦 New New Bank</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">10萬內活儲利率2%</p>
+                                        <p class="card-text">跨轉跨提10次免手續費</p>
+                                        <p class="card-text">新戶最高可享活儲利率8%</p>
+                                        <a target="_blank" href="https://newnewbank.ubot.com.tw/web/#/S0101001?_ga=2.114906319.933012131.1646787931-1352475909.1622710492&_gac=1.216254754.1646791674.EAIaIQobChMIroSdpfa39gIVWNeWCh2IGQFTEAAYASAAEgJi2PD_BwE" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://newnewbank.com.tw/" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_NextBank.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">將來銀行</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">新戶活儲利率最高5%</p>
+                                        <p class="card-text">20萬內活儲利率1.5%</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://www.nextbank.com.tw/app" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://www.nextbank.com.tw/" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_richart.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">台新Richart</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">新戶活儲利率最高3.2%</p>
+                                        <p class="card-text">舊戶完成指定任務1.6%</p>
+                                        <p class="card-text">跨轉跨提5次免手續費</p>
+                                        <a target="_blank" href="https://richart.tw/TSDIB_RichartWeb/Redirect/OpenAccountLink;WEB_SESSION=KHf6Zlro_TqgtbmUXtvdO929dRRctb72je2FIQvaKuscQLfk2dFZ!1952731585?utm_source=google&utm_medium=gsm&utm_campaign=richart_alwayson_20230401&utm_content=textlink_brand_richart&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJvDzf3WBXnOIS0MOnpVujfDR7PkUc6OWRSz7UYoErTqOZgdnmmtam4aAntsEALw_wcB" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://richart.tw/TSDIB_RichartWeb/Products/DemandDeposit?utm_source=google&utm_medium=gsm&utm_campaign=richart_alwayson_20230401&utm_content=textlink_brand_richart&gad=1&gclid=Cj0KCQjw7uSkBhDGARIsAMCZNJvDzf3WBXnOIS0MOnpVujfDR7PkUc6OWRSz7UYoErTqOZgdnmmtam4aAntsEALw_wcB" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+                    <swiper-slide>
+                        <div class="d-flex justify-content-center align-items-center Card_section">
+                            <div>
+            
+            
+            
+                                <img src="./img/bank/0_R_SnY.png" class="card-img-top"
+                                    style="width: 18rem; border-radius: 16px; box-shadow: 0px 0px 4px #808080; margin-top: 15px; margin-bottom: 15px;">
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-header">華南SnY</div>
+                                </div>
+            
+                                <div class="card text-center" style="width: 18rem;">
+                                    <div class="card-body">
+                                        
+                                        <p class="card-text">10萬內活儲利率2.3%</p>
+                                        <p class="card-text">跨轉跨提50次免手續費</p>
+                                        <p class="card-text">每日計息，每月給息</p>
+                                        <a target="_blank" href="https://netbank.hncb.com.tw/netbank/servlet/TrxDispatcher?trx=com.lb.wibc.trx.eCounter_DigitAcct&state=notice" class="btn btn-primary">申辦連結</a>
+                                        <a target="_blank" href="https://event.hncb.com.tw/sny/index.html" class="btn btn-primary">詳細資訊</a>
+                                    </div>
+                                </div>
+                            </div>
+            
+                        </div>
+                    </swiper-slide>
+            
+            
+            
+                </swiper-container>
+            
+
+
+                </div>
+
+                <div class="d-flex"> <!--底部文章連結-->
+                    <a target="_blank" href="./article4.html" class="d-inline-flex ms-auto">
+                        <div class="f_artcont"><i class="px-2 bi bi-pin-angle"></i>這些高利活存帳戶存滿，每年多領超過一萬！</div>
+                    </a>
+                </div>
+
+            </div>
+
+            <hr id="HR2">
+
+            <div class="StockDiscountZone d-lg-flex" id="STOCK"> <!--人氣股票排行+優惠碼-->
+
+
+                <div class="StockZone"> <!--人氣股票排行-->
+                    <div class="d-flex"> <!--人氣股票大標題-->
+                        <span class="f_title">人氣股票/ETF</span>
+                    </div>
+                    <div class="container-sm">
+                        <!-- <div class="d-flex"> -->
+                        <div class="row py-4"> <!--股票卡片，根據斷點使用網格，每一格裡面再分六個內容，設定背景樣式、radius-->
+                            <div class="col-12 col-xl-6"> <!--負責跟斷點有關的-->
+                                <div class="StockCard"> <!--負責卡片底色-->
+                                    <div class="row">
+                                        <div class="col-5 f_comName">中信金</div>
+                                        <div class="col-3 f_stockPrice">25.6</div>
+                                        <div class="col-4 f_yield">殖利率/年度</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5 f_comCode">2891</div>
+                                        <div class="col-3 f_ups">▼ 1.2</div>
+                                        <div class="col-4 f_yield">5% / 111</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-xl-6">
+                                <div class="StockCard ">
+                                    <div class="row">
+                                        <div class="col-5 f_comName">國泰永續高股息</div>
+                                        <div class="col-3 f_stockPrice">19.4</div>
+                                        <div class="col-4 f_yield">殖利率/年度</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5 f_comCode">00878</div>
+                                        <div class="col-3 f_ups">▼ 0.4</div>
+                                        <div class="col-4 f_yield">6% / 111</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-6">
+                                <div class="StockCard ">
+                                    <div class="row">
+                                        <div class="col-5 f_comName">元大台灣50</div>
+                                        <div class="col-3 f_stockPrice">129.2</div>
+                                        <div class="col-4 f_yield">殖利率/年度</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5 f_comCode">0050</div>
+                                        <div class="col-3 f_ups">▼ 0.55</div>
+                                        <div class="col-4 f_yield">3% / 111</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-6">
+                                <div class="StockCard ">
+                                    <div class="row">
+                                        <div class="col-5 f_comName">元大高股息</div>
+                                        <div class="col-3 f_stockPrice">32.45</div>
+                                        <div class="col-4 f_yield">殖利率/年度</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5 f_comCode">0056</div>
+                                        <div class="col-3 f_ups">▼ 0.32</div>
+                                        <div class="col-4 f_yield">5% / 111</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-6">
+                                <div class="StockCard ">
+                                    <div class="row">
+                                        <div class="col-5 f_comName">台積電</div>
+                                        <div class="col-3 f_stockPrice">574</div>
+                                        <div class="col-4 f_yield">殖利率/年度</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5 f_comCode">2330</div>
+                                        <div class="col-3 f_ups">▼ 1.2</div>
+                                        <div class="col-4 f_yield">1.92% / 111</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-6">
+                                <div class="StockCard ">
+                                    <div class="row">
+                                        <div class="col-5 f_comName">玉山金</div>
+                                        <div class="col-3 f_stockPrice">26.35</div>
+                                        <div class="col-4 f_yield">殖利率/年度</div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-5 f_comCode">2884</div>
+                                        <div class="col-3 f_ups">▼ 1.2</div>
+                                        <div class="col-4 f_yield">2.16% / 111</div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+
+                <hr id="HR3">
+
+                <div class="DiscountZone" id="CODE"> <!--優惠碼-->
+                    <div class="d-flex"> <!--優惠碼大標題-->
+                        <span class="f_title ">優惠碼</span>
+                    </div>
+
+                    <!-- 寫兩種優惠碼的顯示，再用@media display:none -->
+
+                    <!-- 小尺寸、大尺寸 -->
+                    <div id="smCode" class="py-4">
+                        <div class="f_secTitle">UberEats</div>
+                        <div class="d-inline-flex">
+                            <div class="row">
+                                <div class="f_discountCode">GP200</div>
+                                <div class="f_Howtouse ">團購訂單滿1000折200</div>
+                            </div>
+                            <div class="row">
+                                <div class="f_discountCode">GP200</div>
+                                <div class="f_Howtouse">團購訂單滿1000折200</div>
+                            </div>
+                        </div>
+                        <div class="f_secTitle">UberEats</div>
+                        <div class="d-inline-flex">
+                            <div class="row">
+                                <div class="f_discountCode">GP200</div>
+                                <div class="f_Howtouse">團購訂單滿1000折200</div>
+                            </div>
+                            <div class="row">
+                                <div class="f_discountCode">GP200</div>
+                                <div class="f_Howtouse">團購訂單滿1000折200</div>
+                            </div>
+                        </div>
+                        <div class="f_secTitle">UberEats</div>
+                        <div class="d-inline-flex">
+                            <div class="row">
+                                <div class="f_discountCode">GP200</div>
+                                <div class="f_Howtouse">團購訂單滿1000折200</div>
+                            </div>
+                            <div class="row">
+                                <div class="f_discountCode">GP200</div>
+                                <div class="f_Howtouse">團購訂單滿1000折200</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- 中等尺寸 -->
+                    <div id="mdCode" class="py-4">
+                        <div class="d-inline-flex">
+                            <div class="row">
+
+                                <div class="f_secTitle">UberEats</div>
+                                <div class="f_discountCode">GP200</div>
+                                <div class="f_Howtouse">團購訂單滿1000折200</div>
+
+                                <div class="f_discountCode">GP200</div>
+                                <div class="f_Howtouse">團購訂單滿1000折200</div>
+
+
+                            </div>
+
+                            <div class="row">
+                                <div class="f_secTitle">UberEats</div>
+                                <div class="f_discountCode">GP200</div>
+                                <div class="f_Howtouse">團購訂單滿1000折200</div>
+                                <div class="f_discountCode">GP200</div>
+                                <div class="f_Howtouse">團購訂單滿1000折200</div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="f_secTitle">UberEats</div>
+                                <div class="f_discountCode">GP200</div>
+                                <div class="f_Howtouse">團購訂單滿1000折200</div>
+                                <div class="f_discountCode">GP200</div>
+                                <div class="f_Howtouse">團購訂單滿1000折200</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr id="HR4">
+
+
+            <div class="SpecialofferZone d-xl-flex"> <!--優惠快報+討論區-->
+
+                <div class="SalenewsZone" id="NEWS"> <!--優惠快報-->
+                    <div class="d-flex"> <!--人氣股票大標題-->
+                        <span class="f_title">優惠快報</span>
+                    </div>
+
+                    <!-- 插入圖片與文章連結 -->
+                    <div class="SalesnewsImg container-md">
+
+                        <div class="">
+
+
+                            <a href="./article2.html">
+
+                                <div>
+                                    <img class="img-fluid rounded" src="./img/article/coffee.jpg">
+
+                                </div>
+                                <div class="d-block">
+
+                                    <div class="">
+
+                                        <p class="f_ins">星巴克優惠來了! 10款必喝飲品「買1送1」限時1天!</p>
+                                    </div>
+
+                                    <div class="Salesnews_text">
+                                        <p class="f_Salesnews_text">
+                                            星巴克優惠來了！今天限時一天，他們推出了10款必喝飲品「買1送1」的優惠活動！不論是經典的拿鐵還是清新的冰沙，你都可以在這個限時優惠中品味到兩杯飲品的美味。別錯過這個難得的機會，趕快去星巴克享受這個令人心動的優惠吧！
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="SalesnewsImg container-md">
+
+                        <div class="">
+
+
+                            <a href="./article2.html">
+
+                                <div>
+                                    <img class="img-fluid rounded" src="./img/article/coffee.jpg">
+
+                                </div>
+                                <div class="d-block">
+
+                                    <div class="">
+
+                                        <p class="f_ins">星巴克優惠來了! 10款必喝飲品「買1送1」限時1天!</p>
+                                    </div>
+
+                                    <div class="Salesnews_text">
+                                        <p class="f_Salesnews_text">
+                                            星巴克優惠來了！今天限時一天，他們推出了10款必喝飲品「買1送1」的優惠活動！不論是經典的拿鐵還是清新的冰沙，你都可以在這個限時優惠中品味到兩杯飲品的美味。別錯過這個難得的機會，趕快去星巴克享受這個令人心動的優惠吧！
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <hr id="HR5">
+
+                <div class="DiscussionZone"> <!--討論區-->
+
+                    <div class="d-flex"> <!--討論區大標題-->
+
+
+                        <div class="f_title"> <!--討論區大標題-->
+                            <span>討論區</span>
+                        </div>
+
+                        <!-- <div class="bg-warning"> 看更多介紹，放信用卡頁面連結，背景方框填色，設定hover，更改超連結設定去除底線  -->
+                        <a target="_blank" href="./discuss.html" class="d-flex ms-auto">
+                            <div class="f_more align-self-center">看更多閒聊<i class="bi bi-chevron-double-right"></i></div>
+                        </a>
+
+                    </div>
+
+                    <!-- 討論版，裡面放討論文章連結 -->
+                    <div class="discussBoard_land container-md">
+
+                        <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+                            <a href="./discussion_content.html">
+
+                                <div class="d-flex">
+
+                                    <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                                        <img class="rounded img-fluid" src="./img/disscuss/stock.jpg">
+                                    </div>
+
+
+                                    <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+                                        <div class="d-flex pt-2 pe-2"><!--卡片的右邊文字部分icon-->
+                                            <div class="ms-auto "><i class="bi bi-heart "></i></div>
+                                            <div class="ms-1"><i class="bi bi-bookmark"></i></div>
+                                            <div class="ms-1"><i class="bi bi-send ms-auto"></i></div>
+                                        </div>
+
+
+                                        <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                                            <p class="f_artTitle Art_text_Title">最近發現的省錢妙招！北漂人、小資族們必看</p>
+                                        </div>
+
+                                        <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                                            <p class="f_artcont Art_text">最近真的愛上在熱門時間過後才去超商買食物，友善時光真的對北漂小資族來說是大大福音</p>
+                                        </div>
+
+                                        <div class="writer d-flex"><!--卡片的右邊下面作者部分-->
+                                            <!--卡片的右邊文字部分作者頭像-->
+                                            <div class="personalPic"
+                                                style="background-image: url(./img/disscuss/cat.jpg);">
+                                            </div>
+
+                                            <div>
+                                                <div class="writerName">喵喵</div>
+                                                <div class="writerName">2023-06-22</div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </a>
+
+
+
+                        </div>
+                        <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+
+                            <a href="./discussion_content.html">
+
+                                <div class="d-flex">
+
+                                    <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                                        <img class="rounded img-fluid" src="./img/disscuss/cash.jpg">
+                                    </div>
+
+
+                                    <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+                                        <div class="d-flex pt-2 pe-2"><!--卡片的右邊文字部分icon-->
+                                            <div class="ms-auto "><i class="bi bi-heart "></i></div>
+                                            <div class="ms-1"><i class="bi bi-bookmark"></i></div>
+                                            <div class="ms-1"><i class="bi bi-send ms-auto"></i></div>
+                                        </div>
+
+
+                                        <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                                            <p class="f_artTitle Art_text_Title">最近發現的省錢妙招！北漂人、小資族們必看</p>
+                                        </div>
+
+                                        <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                                            <p class="f_artcont Art_text">最近真的愛上在熱門時間過後才去超商買食物，友善時光真的對北漂小資族來說是大大福音</p>
+                                        </div>
+
+                                        <div class="writer d-flex"><!--卡片的右邊下面作者部分-->
+                                            <!--卡片的右邊文字部分作者頭像-->
+                                            <div class="personalPic"
+                                                style="background-image: url(./img/disscuss/cat.jpg);">
+                                            </div>
+
+                                            <div>
+                                                <div class="writerName">喵喵</div>
+                                                <div class="writerName">2023-06-22</div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </a>
+
+
+
+                        </div>
+                        <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+                            <a href="./discussion_content.html">
+                                <div class="d-flex">
+
+                                    <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                                        <img class="rounded img-fluid" src="./img/disscuss/computer.jpg">
+                                    </div>
+
+
+                                    <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+                                        <div class="d-flex pt-2 pe-2"><!--卡片的右邊文字部分icon-->
+                                            <div class="ms-auto "><i class="bi bi-heart "></i></div>
+                                            <div class="ms-1"><i class="bi bi-bookmark"></i></div>
+                                            <div class="ms-1"><i class="bi bi-send ms-auto"></i></div>
+                                        </div>
+
+
+                                        <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                                            <p class="f_artTitle Art_text_Title">最近發現的省錢妙招！北漂人、小資族們必看</p>
+                                        </div>
+
+                                        <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                                            <p class="f_artcont Art_text">最近真的愛上在熱門時間過後才去超商買食物，友善時光真的對北漂小資族來說是大大福音</p>
+                                        </div>
+
+                                        <div class="writer d-flex"><!--卡片的右邊下面作者部分-->
+                                            <!--卡片的右邊文字部分作者頭像-->
+                                            <div class="personalPic"
+                                                style="background-image: url(./img/disscuss/cat.jpg);">
+                                            </div>
+
+                                            <div>
+                                                <div class="writerName">喵喵</div>
+                                                <div class="writerName">2023-06-22</div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </a>
+
+                        </div>
+                        <div class="oneDiscuss"><!--最外圍的卡片，背景顏色要改這-->
+
+                            <a href="./discussion_content.html">
+
+
+                                <div class="d-flex">
+
+                                    <div class="DiscussImg bg-light"> <!--卡片的圖片部分-->
+                                        <img class="rounded img-fluid" src="./img/disscuss/pay by credit card.jpg">
+                                    </div>
+
+
+                                    <div class="ArticleIntro"><!--卡片的右邊文字部分-->
+
+                                        <div class="d-flex pt-2 pe-2"><!--卡片的右邊文字部分icon-->
+                                            <div class="ms-auto "><i class="bi bi-heart "></i></div>
+                                            <div class="ms-1"><i class="bi bi-bookmark"></i></div>
+                                            <div class="ms-1"><i class="bi bi-send ms-auto"></i></div>
+                                        </div>
+
+
+                                        <div class="Article_title"><!--卡片的右邊文字部分標題-->
+                                            <p class="f_artTitle Art_text_Title">最近發現的省錢妙招！北漂人、小資族們必看</p>
+                                        </div>
+
+                                        <div class="Article_content"><!--卡片的右邊文字部分內容-->
+                                            <p class="f_artcont Art_text">最近真的愛上在熱門時間過後才去超商買食物，友善時光真的對北漂小資族來說是大大福音</p>
+                                        </div>
+
+                                        <div class="writer d-flex"><!--卡片的右邊下面作者部分-->
+                                            <!--卡片的右邊文字部分作者頭像-->
+                                            <div class="personalPic"
+                                                style="background-image: url(./img/disscuss/cat.jpg);">
+                                            </div>
+
+                                            <div>
+                                                <div class="writerName">喵喵</div>
+                                                <div class="writerName">2023-06-22</div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+        <div class="Footer"> <!--footer-->
+
+            <div class="d-flex px-4 align-self-center m-auto" style="width: 500px;">
+                <!-- 放LOGO -->
+                <div class="flex-grow-1 align-self-center"><a href="" class=""><img src="./img/logo/logo-01.png"
+                            style="width: 120px;"></a></div>
+                <!-- 中間資訊 -->
+                <div class="flex-grow-1">
+                    <div class="d-flex"> <!--關於我們-->
+                        <div class="f_footer flex-grow-1 pt-1">關於我們</div>
+                        <div class="f_footer flex-grow-1 pt-1">商業合作</div>
+                        <div class="f_footer flex-grow-1 pt-1">徵才資訊</div>
+
+                    </div>
+                    <div class="f_footer m-auto pt-3"> <!---->
+                        © 2023 小資星球 All rights reserved.
+                    </div>
+                </div>
+
+                <!-- 社群icon -->
+                <div class="d-flex flex-grow-1 align-self-center ">
+
+                    <div class="flex-grow-1"><a href=""><i class="bi bi-instagram"></i></a></div>
+                    <div class="flex-grow-1"><a href=""><i class="bi bi-facebook"></i></a></div>
+                    <div class="flex-grow-1"><a href=""><i class="bi bi-youtube"></i></a></div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script src="./_js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>
